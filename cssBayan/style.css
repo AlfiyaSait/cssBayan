@@ -4,6 +4,37 @@
     box-sizing: border-box;
 }
 @media (hover:hover) {
+    .img-input:hover ~ .img-box {
+        display: block;
+        overflow: hidden;
+      }
+      
+      .img-input:hover ~ .block-title .img-title {
+          color: #890404;
+      }
+      .img-input:hover ~ .block-title .icon-block {
+        background: url("icons/arrowRight.png") center no-repeat;
+        background-size: cover;
+        display: block;
+    }
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+  font-size: 1rem;
+}
+
+@media only screen
+and (min-device-width : 820px)
+and (max-device-width : 1025px) {
+  font-size: 2rem;
+}
+
+@media only screen
+and (min-device-width : 1026px)
+and (max-device-width : 1920px) {
+  font-size: 3rem;
 }
 
 html {
@@ -38,9 +69,7 @@ body {
      padding: 3rem;
      min-width: 25rem;
 }
-.bayan {
-    /* max-width: 500rem; */
-}
+
 .img-input {
     -webkit-appearance: none;
     appearance: none;
@@ -53,23 +82,12 @@ body {
     overflow: hidden;
 }
 
-.img-input:hover ~ .img-box {
-  display: block;
-  overflow: hidden;
-}
 
-.img-input:hover ~ .block-title .img-title {
-    color: #890404;
-}
 .img-input:checked ~ .block-title .img-title {
     color: #890404;
 }
 
-.img-input:hover ~ .block-title .icon-block {
-    background: url("icons/arrowRight.png") center no-repeat;
-    background-size: cover;
-    display: block;
-}
+
 .img-input:checked ~ .block-title .icon-block {   
     background: url("icons/arrowDown.png") center no-repeat;
     background-size: cover;
@@ -86,7 +104,6 @@ body {
     top:1.5rem;
 
 }
-
 
 
 .pic {
