@@ -6,58 +6,93 @@
 
 body {
     font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
     background-color: rgb(194, 194, 194);
 }
 .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     margin: 3rem 0;
+    font-weight: 600;
+    min-height: 100vh;
     
     
+}
+.header {
+    margin: 1.5rem 0;
 }
 .block {
  
      background-color: rgb(218, 230, 250);
      margin: 0 auto;
      padding: 3rem;
+     min-width: 25rem;
 }
 .bayan {
-  
+    /* max-width: 500rem; */
 }
+.img-input {
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+.img-input:checked ~ .img-box {   
+    display: block;
+    overflow: hidden;
+}
+
+.img-input:hover ~ .img-box {
+  display: block;
+  overflow: hidden;
+}  
+
+.pic {
+    transition: 1.2s;
+    width: 20rem;
+    height: 20rem;
+    overflow: hidden;
+}
+
+
+/* .img-box:after {
+
+height: 10rem;
+width: 10rem;
+} */
+
+.img-input:hover-0ut ~ .img-box {
+   
+    /* display: none; */
+}
+
 .img-box {
+    /* padding: 2.5rem; */
+    display:none;
+    cursor: pointer;
+    overflow: hidden;   
+
+}
+/* .img-box:hover {
+    height: 30rem;
+} */
+.img-title {
+    display: block;
+    cursor: pointer;
+    padding: 1.2rem 0;
+    border-top: 1px solid rgb(57, 49, 95);
     
 }
-.img1 {
-    background: url("images/img_01.jpg") center no-repeat;
-    background-size: cover;
-    height: 20rem;
-    width: 20rem;
+/* .img-title:hover {
+    background-color: brown;
+} */
+
+.arrow {
+    width: 10px;
+    height: 10px;
 }
 
-.img2 {
-    background: url("images/img_02.png") center no-repeat;
-    background-size: cover;
-    height: 20rem;
-    width: 20rem;
-}
 
-.img3 {
-    background: url("images/img_03.jpg") center no-repeat;
-    background-size: cover;
-    height: 20rem;
-    width: 20rem;
-}
-
-.img4 {
-    background: url("images/img_04.jpg") center no-repeat;
-    background-size: cover;
-    height: 20rem;
-    width: 20rem;
-}
-
-.img5 {
-    background: url("images/img_05.jpg") center no-repeat;
-    background-size: cover;
-    height: 20rem;
-    width: 20rem;
-}
