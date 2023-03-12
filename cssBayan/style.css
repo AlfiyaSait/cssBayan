@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@media (hover:hover) {
+    .img-input:hover ~ .img-box {
+        display: block;
+        overflow: hidden;
+      }
+      
+      .img-input:hover ~ .block-title .img-title {
+          color: #890404;
+      }
+      .img-input:hover ~ .block-title .icon-block {
+        background: url("icons/arrowRight.png") center no-repeat;
+        background-size: cover;
+        display: block;
+    }
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+  font-size: 1rem;
+}
+
+@media only screen
+and (min-device-width : 820px)
+and (max-device-width : 1025px) {
+  font-size: 2rem;
+}
+
+@media only screen
+and (min-device-width : 1026px)
+and (max-device-width : 1920px) {
+  font-size: 3rem;
+}
+
+html {
+    overflow-x: hidden;
+    margin-right: calc(-1 * (100vw - 100%));
+  }
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    background-color: rgb(194, 194, 194);
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    min-height: 100vh;
+    
+    
+}
+.header {
+    margin: 1.5rem 0;
+}
+.block {
+ 
+     background-color: #dae6fa;
+     margin: 0 auto;
+     padding: 3rem;
+     min-width: 25rem;
+}
+
+.img-input {
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+.img-input:checked ~ .img-box {   
+    display: block;
+    overflow: hidden;
+}
+
+
+.img-input:checked ~ .block-title .img-title {
+    color: #890404;
+}
+
+
+.img-input:checked ~ .block-title .icon-block {   
+    background: url("icons/arrowDown.png") center no-repeat;
+    background-size: cover;
+    display: block;
+}
+.icon-block {
+  
+    background: url("icons/arrowRight.png") center no-repeat;
+    background-size: cover;
+    width: 1rem;
+    height: 1rem;
+    display: none;
+    position: relative;
+    top:1.5rem;
+
+}
+
+
+.pic {
+    transition: 1.2s;
+    width: 20rem;
+    height: 20rem;
+    overflow: hidden;
+}
+
+
+
+.img-box {
+    /* padding: 2.5rem; */
+    display:none;
+    cursor: pointer;
+    overflow: hidden;   
+
+}
+
+.img-title {  
+    display: block;
+    cursor: pointer;
+    padding: 1.2rem 0;
+    
+    transition: color .2s ease-out;
+    color: #0F0851;    
+}
+
+
+.block-title {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(57, 49, 95);
+}
+
